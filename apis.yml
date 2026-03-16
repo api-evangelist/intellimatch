@@ -1,55 +1,22 @@
-name: Intellimatch API
-description: API for intelligent matching and recommendation services
-image: https://www.intellimatch.com/logo.png
-url: https://www.intellimatch.com
-created: '2024-01-01'
-modified: '2024-01-01'
-apis:
-- name: Intellimatch Core API
-  description: Core matching and recommendation engine API
-  image: https://www.intellimatch.com/api-logo.png
-  humanURL: https://www.intellimatch.com/api
-  baseURL: https://api.intellimatch.com/v1
-  tags:
-  - matching
-  - recommendations
-  - AI
-  - machine learning
-  properties:
-  - type: Documentation
-    url: https://docs.intellimatch.com
-  - type: OpenAPI
-    url: https://api.intellimatch.com/v1/openapi.json
-  - type: Authentication
-    url: https://docs.intellimatch.com/authentication
-  - type: SDKs
-    url: https://docs.intellimatch.com/sdks
-  - type: Pricing
-    url: https://www.intellimatch.com/pricing
-  - type: Terms of Service
-    url: https://www.intellimatch.com/terms
-  - type: Privacy Policy
-    url: https://www.intellimatch.com/privacy
-  - type: Status
-    url: https://status.intellimatch.com
-  - type: Support
-    url: https://support.intellimatch.com
-  - type: Rate Limits
-    url: https://docs.intellimatch.com/rate-limits
-  contact:
-  - type: Email
-    url: mailto:api@intellimatch.com
-  - type: Twitter
-    url: https://twitter.com/intellimatch
-  - type: Support Portal
-    url: https://support.intellimatch.com
-maintainers:
-- name: Intellimatch API Team
-  email: api-team@intellimatch.com
-  url: https://www.intellimatch.com/about
+aid: intellimatch
+name: Intellimatch
+description: >-
+  Intellimatch provides intelligent matching and recommendation services for
+  talent acquisition, candidate matching, and job placement. The platform uses
+  AI and machine learning to connect candidates with opportunities.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-- matching
-- recommendations
-- artificial intelligence
-- machine learning
-- personalization
+  - Matching
+  - Recommendations
+  - Artificial Intelligence
+  - Machine Learning
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/intellimatch/refs/heads/main/apis.yml
+created: '2024-01-01'
+modified: '2026-03-16'
+specificationVersion: '0.19'
+apis: []
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
