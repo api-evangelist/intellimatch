@@ -7,10 +7,10 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Matching
-  - Recommendations
   - Artificial Intelligence
   - Machine Learning
+  - Matching
+  - Recommendations
 url: >-
   https://raw.githubusercontent.com/api-evangelist/intellimatch/refs/heads/main/apis.yml
 created: '2024-01-01'
