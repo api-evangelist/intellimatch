@@ -1,44 +1,22 @@
-# Intellimatch API (intellimatch)
-API for intelligent matching and recommendation services
+# IntelliMatch
 
-**URL:** [Visit APIs.json URL](https://www.intellimatch.com)
+IntelliMatch is a transaction and account reconciliation platform originally developed by SunGard and now offered by FIS for financial institutions and corporates to automate matching, exception management, and reconciliation across high volumes of cash, securities, and intercompany activity. There is no public developer API or documentation.
 
-## Tags:
+**Tags:** Reconciliation, Financial Services, Matching, Exception Management
 
- - matching, recommendations, artificial intelligence, machine learning, personalization
-
-## Timestamps
-
-- **Created:** 2024-01-01 
-- **Modified:** 2024-01-01 
+**Timestamps:**
+- **Created:** 2024-01-01
+- **Modified:** 2026-04-28
 
 ## APIs
 
-### Intellimatch Core API
-Core matching and recommendation engine API
+No public APIs have been documented.
 
-**Human URL:** [https://www.intellimatch.com/api](https://www.intellimatch.com/api)
+## Common Properties
 
-
-#### Tags:
-
- - matching, recommendations, AI, machine learning
-
-#### Properties
-
-- [Documentation](https://docs.intellimatch.com)
-- [OpenAPI](https://api.intellimatch.com/v1/openapi.json)
-- [Authentication](https://docs.intellimatch.com/authentication)
-- [SDKs](https://docs.intellimatch.com/sdks)
-- [Pricing](https://www.intellimatch.com/pricing)
-- [Terms of Service](https://www.intellimatch.com/terms)
-- [Privacy Policy](https://www.intellimatch.com/privacy)
-- [Status](https://status.intellimatch.com)
-- [Support](https://support.intellimatch.com)
-- [Rate Limits](https://docs.intellimatch.com/rate-limits)
+- [Website](https://www.fisglobal.com/en/products/intellimatch-reconciliation-software)
 
 ## Maintainers
 
-**FN:** Intellimatch API Team
-
-**Email:** api-team@intellimatch.com
+- **FN:** Kin Lane
+- **Email:** kin@apievangelist.com
