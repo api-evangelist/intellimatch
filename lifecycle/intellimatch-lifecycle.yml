@@ -1,0 +1,38 @@
+generated: '2026-09-13'
+method: searched
+source: https://www.fisglobal.com/products/fis-data-integrity-manager
+note: >-
+  Product lifecycle, not API lifecycle — IntelliMatch publishes no API, so there is no versioning
+  scheme, deprecation policy, Sunset/Deprecation header practice or SLA to record. The material
+  lifecycle fact is a rename that the catalog was still carrying under the old identity.
+api_lifecycle:
+  versioning_scheme: na
+  deprecation_policy: none-published
+  sunset_headers: na
+  sla: none-published
+  status_page: none-published
+  note: >-
+    FIS operates a status page for its Code Connect API marketplace
+    (https://codeconnectstatus.statuspage.io/, HTTP 200), but that covers the marketplace's APIs,
+    not this product. Not recorded as this product's status page.
+product_lifecycle:
+  current_name: FIS Data Integrity Manager
+  former_name: IntelliMatch
+  rename_evidence: >-
+    https://www.fisglobal.com/products/fis-data-integrity-manager — the live product page is
+    titled "FIS Data Integrity Manager" and names IntelliMatch explicitly as the former name.
+  origin: SunGard
+  current_owner: FIS
+  ownership_evidence: apis.yml x-parent fis, x-relationship acquisition
+  delivery_modes:
+  - name: on-premise / customer-hosted
+  - name: FIS Optimized Reconciliation Service (formerly Managed Reconciliation Service, MRS)
+    note: FIS-hosted managed service; listed on Microsoft Marketplace as fis.intellimatchmrs (HTTP 200)
+  retired_urls:
+  - url: https://www.fisglobal.com/en/products/intellimatch-reconciliation-software
+    status: 404
+    checked: '2026-09-13'
+    note: >-
+      The URL this record carried as its Website. Now a hard 404 following the rename. Replaced in
+      apis.yml with the live Data Integrity Manager page rather than left to rot.
+deprecated_operations: []

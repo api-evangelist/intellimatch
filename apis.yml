@@ -1,58 +1,117 @@
 aid: intellimatch
 name: IntelliMatch
 description: >-
-  IntelliMatch is a transaction and account reconciliation platform originally
-  developed by SunGard and now offered by FIS for financial institutions and
-  corporates to automate matching, exception management, and reconciliation
-  across high volumes of cash, securities, and intercompany activity. There is
-  no public developer API or documentation.
+  IntelliMatch is a transaction and account reconciliation platform originally developed by
+  SunGard, now offered by FIS, and since renamed FIS Data Integrity Manager. It performs
+  account-level balance and transaction proofing at high volume and drives review, approval,
+  exception management and escalation through an integrated workflow engine, so financial
+  institutions and corporates can reconcile cash, securities and intercompany activity and track
+  data integrity centrally. The product is SWIFT-accredited, embeds machine learning through an AI
+  Virtual Reconciler, and is sold either customer-hosted or as the FIS Optimized Reconciliation
+  Service (formerly Managed Reconciliation Service). FIS publishes no developer program,
+  documentation, OpenAPI or any other machine-readable contract for it; integration is arranged
+  commercially. FIS's public API marketplace, Code Connect, carries a different product line and
+  is profiled separately.
 type: Index
 deliveryModel:
-  model: unknown
+  model: commercial-closed
   open_source: false
-  commercial: false
+  commercial: true
   callable_host: false
-  label: Delivery model not determined — needs a product licence on record
-  confidence: low
+  label: Commercial enterprise software, sold customer-hosted or as an FIS-managed service; no callable public host
+  confidence: medium
   source:
-  - none
-  generated: '2026-08-28'
-  method: derived
+    - https://www.fisglobal.com/products/fis-data-integrity-manager
+    - https://marketplace.microsoft.com/en-us/product/saas/fis.intellimatchmrs
+  generated: '2026-09-13'
+  method: searched
 accessModel:
-  pricing: unknown
-  onboarding: unknown
+  pricing: contact-sales
+  onboarding: sales
   trial: false
   try_now: false
   public: false
-  label: Unknown
-  confidence: low
-  source: []
-  generated: '2026-07-22'
-  method: derived
+  label: Enterprise contact-sales only; no published pricing and no self-service signup
+  confidence: medium
+  source:
+    - https://www.fisglobal.com/products/fis-data-integrity-manager
+  generated: '2026-09-13'
+  method: searched
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/intellimatch.png
 tags:
   - Reconciliation
   - Financial-Services
   - Matching
   - Exception Management
+  - Banking
+  - Treasury
+  - SWIFT
+  - Data Integrity
 tags_raw:
   - Reconciliation
   - Financial Services
   - Matching
   - Exception Management
+  - Banking
+  - Treasury
+  - SWIFT
+  - Data Integrity
 url: >-
   https://raw.githubusercontent.com/api-evangelist/intellimatch/refs/heads/main/apis.yml
 created: '2024-01-01'
-modified: '2026-04-28'
+modified: '2026-09-13'
 specificationVersion: '0.23'
 apis: []
 common:
+  - type: Website
+    url: https://www.fisglobal.com/products/fis-data-integrity-manager
   - type: DomainSecurity
     url: security/intellimatch-domain-security.yml
-  - type: Website
-    url: https://www.fisglobal.com/en/products/intellimatch-reconciliation-software
+  - type: WellKnown
+    url: well-known/intellimatch-well-known.yml
+  - type: SecurityTxt
+    url: well-known/intellimatch-security.txt
+  - type: VulnerabilityDisclosure
+    url: security/intellimatch-vulnerability-disclosure.yml
+  - type: Security
+    url: https://www.fisglobal.com/en/responsible-disclosure
+  - type: Conformance
+    url: conformance/intellimatch-conformance.yml
+  - type: Lifecycle
+    url: lifecycle/intellimatch-lifecycle.yml
+  - type: Plans
+    url: plans/intellimatch-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/intellimatch-rate-limits.yml
+  - type: Packages
+    url: packages/intellimatch-packages.yml
+  - type: LLMsTxt
+    url: llms/intellimatch-llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
 x-parent: fis
 x-relationship: acquisition
+x-enrichment:
+  date: '2026-09-13'
+  status: minimal
+  artifacts_added: 9
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    FIS ships IntelliMatch — renamed FIS Data Integrity Manager — as an end-user enterprise
+    reconciliation application with no developer program of its own: the live product page offers
+    brochures and "Connect with sales" and links to no reference, spec or portal, while the URL
+    this record previously carried as its Website is now a hard 404 after the rename.
+  evidence:
+    - url: https://www.fisglobal.com/products/fis-data-integrity-manager
+      status: 200
+    - url: https://www.fisglobal.com/en/products/intellimatch-reconciliation-software
+      status: 404
+    - url: https://codeconnect.fisglobal.com/fisccp/apisbytag
+      status: 403
+    - url: https://fisglobal.com/.well-known/security.txt
+      status: 200
+  checked: '2026-09-13'

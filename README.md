@@ -64,13 +64,13 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-IntelliMatch is a transaction and account reconciliation platform originally developed by SunGard and now offered by FIS for financial institutions and corporates to automate matching, exception management, and reconciliation across high volumes of cash, securities, and intercompany activity. There is no public developer API or documentation.
+IntelliMatch is a transaction and account reconciliation platform originally developed by SunGard, now offered by FIS, and since renamed **FIS Data Integrity Manager**. It performs account-level balance and transaction proofing at high volume and drives review, approval, exception management and escalation through an integrated workflow engine, so financial institutions and corporates can reconcile cash, securities and intercompany activity. It is SWIFT-accredited and is sold either customer-hosted or as the FIS Optimized Reconciliation Service. FIS publishes no developer program, documentation, OpenAPI or other machine-readable contract for this product; integration is arranged commercially. FIS's public API marketplace, Code Connect, carries a different product line and is profiled separately at [api-evangelist/fis](https://github.com/api-evangelist/fis).
 
-**Tags:** Reconciliation, Financial Services, Matching, Exception Management
+**Tags:** Reconciliation, Financial Services, Matching, Exception Management, Banking, Treasury, SWIFT, Data Integrity
 
 **Timestamps:**
 - **Created:** 2024-01-01
-- **Modified:** 2026-04-28
+- **Modified:** 2026-09-13
 
 ## APIs
 
@@ -78,7 +78,17 @@ No public APIs have been documented.
 
 ## Common Properties
 
-- [Website](https://www.fisglobal.com/en/products/intellimatch-reconciliation-software)
+- [Website](https://www.fisglobal.com/products/fis-data-integrity-manager)
+- [Security / Responsible Disclosure](https://www.fisglobal.com/en/responsible-disclosure)
+- Well-Known probe: `well-known/intellimatch-well-known.yml` (+ verbatim `well-known/intellimatch-security.txt`)
+- Vulnerability disclosure: `security/intellimatch-vulnerability-disclosure.yml`
+- Domain security: `security/intellimatch-domain-security.yml`
+- Conformance: `conformance/intellimatch-conformance.yml`
+- Lifecycle: `lifecycle/intellimatch-lifecycle.yml`
+- Plans / pricing: `plans/intellimatch-plans-pricing.yml`
+- Rate limits: `rate-limits/intellimatch-rate-limits.yml`
+- Packages: `packages/intellimatch-packages.yml`
+- llms.txt: `llms/intellimatch-llms.txt`
 
 ## Maintainers
 

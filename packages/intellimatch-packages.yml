@@ -1,0 +1,31 @@
+generated: '2026-09-13'
+method: searched
+source: npm registry search, PyPI, GitHub code search
+package_count: 0
+official_package_count: 0
+note: >-
+  No first-party FIS client library exists for IntelliMatch / FIS Data Integrity Manager on any
+  registry searched (npm, PyPI, GitHub). There is no API for one to wrap.
+packages: []
+name_collisions:
+- registry: pypi
+  name: intellimatch
+  url: https://pypi.org/project/intellimatch/
+  version: 0.3.0
+  published: null
+  official: false
+  note: >-
+    NOT FIS. An unrelated third-party fuzzy matching / text-search CLI by Cody Childers, homed at
+    bitbucket.org/codyc54321/intellimatch. Recorded here so a later pass does not mistake the
+    name match for a first-party SDK. `published` is null because the registry metadata was not
+    read for a package that is not ours to record.
+registries_searched:
+- registry: npm
+  query: intellimatch, fis-intellimatch, data-integrity-manager
+  result: no first-party match
+- registry: pypi
+  query: intellimatch, fis-intellimatch, data-integrity-manager
+  result: one unrelated third-party package (see name_collisions)
+- registry: github
+  query: intellimatch fis
+  result: 1 repository, and it is this API Evangelist profile repo

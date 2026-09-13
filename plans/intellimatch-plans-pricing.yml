@@ -1,0 +1,19 @@
+generated: '2026-09-13'
+method: searched
+source: https://www.fisglobal.com/products/fis-data-integrity-manager
+plan_count: 0
+note: >-
+  FIS publishes no pricing, tiers, quotas or overage terms for IntelliMatch / FIS Data Integrity
+  Manager. The live product page offers "Connect with sales" and downloadable brochures and
+  carries no pricing element of any kind; the Microsoft Marketplace listing for the hosted service
+  (fis.intellimatchmrs, HTTP 200) is a contact-sales listing with no published rate card either.
+  An honest zero: enterprise contact-sales only.
+plans: []
+pricing_model: contact-sales
+evidence:
+- url: https://www.fisglobal.com/products/fis-data-integrity-manager
+  status: 200
+  note: live product page, read with a browser agent; no pricing published
+- url: https://marketplace.microsoft.com/en-us/product/saas/fis.intellimatchmrs
+  status: 200
+  note: hosted-service listing; contact-sales, no rate card

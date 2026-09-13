@@ -1,0 +1,80 @@
+generated: '2026-09-13'
+method: probed
+source: live GET of the named /.well-known/ path list on every host this record knows
+note: >-
+  IntelliMatch — renamed FIS Data Integrity Manager — operates no host of its own. The only
+  hosts this record knows are its vendor's: the fisglobal.com apex, the www. product host, and
+  codeconnect.fisglobal.com, the FIS Code Connect API marketplace reached by following
+  developer.fisglobal.com. ONE real document was fetched: fisglobal.com serves a genuine RFC 9116
+  security.txt at the edge (Contact and Policy both point at FIS Responsible Disclosure,
+  Acknowledgments at bugcrowd.com/fis), saved verbatim here. Two deviations are recorded rather
+  than hidden — its Expires field lapsed 2023-12-31, which RFC 9116 section 6.6 says clients
+  should treat as stale, and it is served as text/html rather than text/plain. The document is
+  FIS corporate-wide, not IntelliMatch-specific; it is recorded here because fisglobal.com is the
+  only domain this product is published on and that security.txt is therefore the real disclosure
+  channel for it. Every other named path on the apex 301s, and the negative control 301s too, so
+  the apex is not a catch-all. www.fisglobal.com is behind Akamai bot management and answered
+  403 Access Denied or reset the HTTP/2 stream on every path — recorded as not reachable by our
+  crawler, not as a miss. codeconnect.fisglobal.com is an Angular single-page application that
+  answers 200 with the same app shell for EVERY path including the negative control; no document
+  was fetched there and no hit is recorded from it.
+path_echo_control: passed
+hosts:
+- host: https://fisglobal.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: intellimatch-security.txt
+  - path: /.well-known/openid-configuration
+    status: 301
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+  - path: /.well-known/api-catalog
+    status: 301
+  - path: /.well-known/ai-plugin.json
+    status: 301
+  - path: /.well-known/agent-card.json
+    status: 301
+  - path: /.well-known/agent.json
+    status: 301
+  - path: /llms.txt
+    status: 301
+  - path: /.well-known/intellimatch-negative-control-9d2c47a1.json
+    status: 301
+- host: https://www.fisglobal.com
+  soft_404_control: not-reachable-by-crawler
+  note: >-
+    Akamai bot management answered 403 Access Denied or reset the HTTP/2 stream on every path,
+    even with a browser User-Agent. No status is trustworthy here; recorded as neither hit nor miss.
+  documents: []
+- host: https://codeconnect.fisglobal.com
+  soft_404_control: failed
+  note: >-
+    Angular SPA catch-all. Every path returns HTTP 200 with the identical ~100KB application
+    shell (title "Code Connect: API Marketplace | FIS"), including the negative control, so no
+    200 here is evidence of a document. Recorded as a miss on every path.
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    note: HTML application shell, not a document — miss
+  - path: /.well-known/openid-configuration
+    status: 200
+    note: HTML application shell, not a document — miss
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    note: HTML application shell, not a document — miss
+  - path: /.well-known/api-catalog
+    status: 200
+    note: HTML application shell, not a document — miss
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    note: HTML application shell, not a document — miss
+  - path: /.well-known/agent-card.json
+    status: 200
+    note: HTML application shell, not a document — miss
+  - path: /.well-known/agent.json
+    status: 200
+    note: HTML application shell, not a document — miss
+  - path: /llms.txt
+    status: 200
+    note: HTML application shell, not a document — miss

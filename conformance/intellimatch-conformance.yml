@@ -1,0 +1,34 @@
+generated: '2026-09-13'
+method: searched
+source: https://www.fisglobal.com/products/fis-data-integrity-manager
+note: >-
+  No machine-readable contract exists for this product, so nothing here is derived from a spec.
+  Every entry below is a claim the vendor makes on its own product page, recorded with the URL
+  that carries it and graded honestly. No domain-standard conformance is asserted: the 0.12.0
+  domain_standard_conformance check reads a CONTRACT declaring a standard (a SCIM URN, an OData
+  $metadata surface, an ISO 20022 message type), and IntelliMatch publishes no contract to read.
+  The SWIFT accreditation below is a vendor product accreditation, not a contract declaration,
+  and is recorded as such.
+conformance:
+- id: swift-compatible-application
+  conforms: true
+  grade: vendor-claimed
+  evidence: >-
+    https://www.fisglobal.com/products/fis-data-integrity-manager — the product page carries a
+    SWIFT Compatible Applications badge and describes the solution as SWIFT-accredited.
+  note: >-
+    Accreditation of the application by SWIFT, not a published message-contract conformance.
+    Not counted toward domain_standard_conformance, which reads the contract.
+- id: iso-20022
+  conforms: unknown
+  grade: unverified
+  evidence: >-
+    No FIS document reachable without credentials states which ISO 20022 message types
+    IntelliMatch ingests or emits. The SWIFT Confirmation Copy service the product is sold with
+    implies MT/MX handling, but no first-party statement of message types was found.
+- id: rfc9457
+  conforms: false
+  evidence: No public error contract or problem+json surface exists for this product.
+- id: oauth2
+  conforms: false
+  evidence: No public authentication surface or securityScheme exists for this product.

@@ -1,0 +1,17 @@
+generated: '2026-09-13'
+method: searched
+source: https://www.fisglobal.com/products/fis-data-integrity-manager
+limit_count: 0
+note: >-
+  No public API exists for IntelliMatch / FIS Data Integrity Manager, so there are no published
+  rate limits, no runtime rate-limit response headers, and no documented exhaustion status code.
+  An honest zero rather than an omitted file.
+rate_limits: []
+headers: []
+evidence:
+- url: https://www.fisglobal.com/products/fis-data-integrity-manager
+  status: 200
+  note: live product page; no developer or API reference section
+- url: https://www.fisglobal.com/en/products/intellimatch-reconciliation-software
+  status: 404
+  note: former product URL, now dead
