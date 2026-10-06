@@ -60,10 +60,12 @@ tags_raw:
 url: >-
   https://raw.githubusercontent.com/api-evangelist/intellimatch/refs/heads/main/apis.yml
 created: '2024-01-01'
-modified: '2026-09-13'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis: []
 common:
+  - url: https://www.fisglobal.com/insights
+    type: Blog
   - type: Website
     url: https://www.fisglobal.com/products/fis-data-integrity-manager
   - type: DomainSecurity
