@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/intellimatch/integrations
+- https://n8n.io/integrations/intellimatch/
+- https://composio.dev/toolkits/intellimatch
+- https://monid.ai/tools/intellimatch
+checked:
+- https://composio.dev/toolkits/intellimatch
+- https://monid.ai/tools/intellimatch
+- https://n8n.io/integrations/intellimatch/
+- https://zapier.com/apps/intellimatch/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
