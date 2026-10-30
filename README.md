@@ -64,33 +64,94 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-IntelliMatch is a transaction and account reconciliation platform originally developed by SunGard, now offered by FIS, and since renamed **FIS Data Integrity Manager**. It performs account-level balance and transaction proofing at high volume and drives review, approval, exception management and escalation through an integrated workflow engine, so financial institutions and corporates can reconcile cash, securities and intercompany activity. It is SWIFT-accredited and is sold either customer-hosted or as the FIS Optimized Reconciliation Service. FIS publishes no developer program, documentation, OpenAPI or other machine-readable contract for this product; integration is arranged commercially. FIS's public API marketplace, Code Connect, carries a different product line and is profiled separately at [api-evangelist/fis](https://github.com/api-evangelist/fis).
+IntelliMatch is a transaction and account reconciliation platform originally developed by SunGard, now offered by FIS, and since renamed FIS Data Integrity Manager. It performs account-level balance and transaction proofing at high volume and drives review, approval, exception management and escalation through an integrated workflow engine, so financial institutions and corporates can reconcile cash, securities and intercompany activity and track data integrity centrally. The product is SWIFT-accredited, embeds machine learning through an AI Virtual Reconciler, and is sold either customer-hosted or as the FIS Optimized Reconciliation Service (formerly Managed Reconciliation Service). FIS publishes no developer program, documentation, OpenAPI or any other machine-readable contract for it; integration is arranged commercially. FIS's public API marketplace, Code Connect, carries a different product line and is profiled separately.
 
-**Tags:** Reconciliation, Financial Services, Matching, Exception Management, Banking, Treasury, SWIFT, Data Integrity
+**Areas:** Reconciliation · Financial Services · Matching · Exception Management · Banking · Treasury · SWIFT · Data Integrity
 
-**Timestamps:**
-- **Created:** 2024-01-01
-- **Modified:** 2026-09-13
+## IntelliMatch on APIs.io
 
-## APIs
+Everything profiled for IntelliMatch is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/intellimatch/](https://apis.io/providers/intellimatch/)** — or go straight to one of the APIs or properties below.
 
-No public APIs have been documented.
+### Published properties
 
-## Common Properties
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Intellimatch Domain Security](https://apis.io/security/intellimatch/intellimatch-domain-security/)
+- [Intellimatch Vulnerability Disclosure](https://apis.io/security/intellimatch/intellimatch-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Intellimatch Plans Pricing](https://apis.io/plans/intellimatch/intellimatch-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Intellimatch Rate Limits](https://apis.io/rate-limits/intellimatch/intellimatch-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.fisglobal.com/products/fis-data-integrity-manager)
-- [Security / Responsible Disclosure](https://www.fisglobal.com/en/responsible-disclosure)
-- Well-Known probe: `well-known/intellimatch-well-known.yml` (+ verbatim `well-known/intellimatch-security.txt`)
-- Vulnerability disclosure: `security/intellimatch-vulnerability-disclosure.yml`
-- Domain security: `security/intellimatch-domain-security.yml`
-- Conformance: `conformance/intellimatch-conformance.yml`
-- Lifecycle: `lifecycle/intellimatch-lifecycle.yml`
-- Plans / pricing: `plans/intellimatch-plans-pricing.yml`
-- Rate limits: `rate-limits/intellimatch-rate-limits.yml`
-- Packages: `packages/intellimatch-packages.yml`
-- llms.txt: `llms/intellimatch-llms.txt`
+- [Blog](https://www.fisglobal.com/insights)
+- [Security](https://www.fisglobal.com/en/responsible-disclosure)
 
-## Maintainers
+## API Evangelist rating
 
-- **FN:** Kin Lane
-- **Email:** kin@apievangelist.com
+**Kin Score 7.8** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 0.0 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.4** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/intellimatch/](https://apis.io/providers/intellimatch/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for IntelliMatch: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/intellimatch/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
